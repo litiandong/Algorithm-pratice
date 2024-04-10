@@ -5,13 +5,13 @@
 ## 二叉堆
 
   数组的抽象，数组下标从1开始
-  LEFT(i) = i * 2
-  RIGHT(i) = i * 2 + 1
-  PARENT(i) = i / 2
   对于每个节点一定是大于(最大堆)/小于(最小堆)它的子结点
   应该有的API:
 
   ```c, no_run
+  LEFT(i) = i * 2
+  RIGHT(i) = i * 2 + 1
+  PARENT(i) = i / 2
   void make_heap(array, len, begin)		// 将长度为len的数组,从下标为begin的指针开始保持最大/小堆
   void heap_ify(array, len)	// 维护array作为最大/小堆的性质
   ```
