@@ -1,4 +1,1 @@
-
-clean:
-	@rm -f ./*.o ./*.out
-
+include ../depen/include.mk
