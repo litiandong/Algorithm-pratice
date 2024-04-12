@@ -22,7 +22,7 @@ test: all
 
 clean:
 	@for dir in $(P); do \
-		echo "$(Yellow)clean $$dir\n$(End)" \
+		echo "$(Yellow)clean $$dir\n$(End)"; \
 		$(MAKE) -C $$dir clean --no-print-directory;\
 	done
 
